@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Yago | Portfólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#jornada" class="menu-link">Jornada</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./img/me.png" alt="Foto de Yago Oliveira" class="foto-perfil">
+        <h1>Yago Oliveira</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor FullStack</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá! Eu sou Yago Oliveira, desenvolvedor Web em transição de carreira para a área de tecnologia.
+                <br>
+                <br>
+                Minha formação em programação Web pelo DevClub me permitiu desenvolver conhecimentos em JavaScript,
+                TypeScript, React, Node.js, Express, PostgreSQL e APIs REST, colocando esses conhecimentos em prática
+                através de projetos próprios.
+                <br>
+                <br>
+                Entre meus principais projetos estão o DevBurguer, uma aplicação Full Stack com autenticação, painel
+                administrativo, PostgreSQL e integração com Stripe, e o Dev Tempo, um aplicativo mobile desenvolvido com
+                React Native, TypeScript e Expo.
+                <br>
+                <br>
+                Atualmente, busco minha primeira oportunidade como desenvolvedor Júnior, com o objetivo de continuar
+                evoluindo tecnicamente e contribuir com projetos reais.
+            </p>
+        </div>
+    </section>
+
+    <section id="jornada" class="jornada">
+        <h2 class="sobre-titulo">Minha Jornada</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                2016 — 2024
+                💊 Farmácia Hospitalar — Unimed
+                8 anos de experiência em um ambiente que exigia responsabilidade, organização, atenção aos detalhes e
+                trabalho em equipe.
+                <br>
+                <br>
+                ↓
+                <br>
+                <br>
+                2024 — 2026
+                💊 Farmácia Comercial —
+                Experiência com atendimento, comunicação e relacionamento com diferentes pessoas.
+                <br>
+                <br>
+                ↓
+                <br>
+                <br>
+                Transição de carreira
+                💻 Formação em Programação Web — DevClub
+                Início da minha jornada na programação e desenvolvimento das primeiras aplicações.
+                <br>
+                <br>
+                ↓
+                <br>
+                <br>
+                <b>Projetos</b>
+                <br>
+                🚀 DevBurguer
+                <br>
+                🌦️ Dev Tempo
+                <br>
+                🎮 Jokenpô
+                <br>
+                🎲 Sorteador
+                <br>
+                💱 Conversor de Moedas
+                <br>
+                <br>
+                ↓
+                <br>
+                <br>
+                2026
+                🎯 Buscando minha primeira oportunidade em Tecnologia
+            </p>
+        </div>
+    </section>
+
+
+
+    <section id="projetos" class="projetos">
+
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+
+
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Hamburgueria 🍔🍟🥤</h3>
+                    <p class="paragrafo-projetos">Lanchonete virtual para fazer seus pedidos</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/jkp.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">JokenPô 🤜🖐️✌️</h3>
+                    <p class="paragrafo-projetos">Jogo Clássico de Pedra, Papel e Tesoura</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/sorteio.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Sorteador 🎰</h3>
+                    <p class="paragrafo-projetos">Sorteador Profissional com numeração</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/home.jpeg" alt="Projeto 4" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">DEV-TEMPO 🌤️🌧️</h3>
+                    <p class="paragrafo-projetos">App Mobile de Previsão do tempo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contatos" class="contatos">
+
+        <h2 class="contatos-titulo">Vamos conversar ?</h2>
+
+        <form class="formulario-contatos" onsubmit="enviarWhats(event)">
+
+            <div class="grupo-form">
+                <input type="text" id="nome" name="nome" class="campo-form" placeholder="Seu nome" required>
+            </div>
+
+            <div class="grupo-form">
+                <textarea id="mensagem" name="mensagem" class="campo-form" placeholder="Sua mensagem" rows="5"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">
+                Enviar mensagem
+            </button>
+
+        </form>
+
+        <div class="links-contatos">
+
+
+            <a href="mailto:yago.chp22@gmail.com" class="link-contato" aria-label="Enviar e-mail" title="E-mail">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/yagoalves" target="_blank" rel="noopener noreferrer"
+                class="link-contato" aria-label="LinkedIn" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/YagoAlves92" target="_blank" rel="noopener noreferrer" class="link-contato"
+                aria-label="GitHub" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+
+        </div>
+
+
+
+    </section>
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5521977470955';
+
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+            window.open(url, '_blank')
+        }
+
+    </script>
+
+</body>
+
+</html>
