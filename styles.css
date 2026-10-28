@@ -150,6 +150,13 @@ h1 {
     cursor: pointer;
 }
 
+.projeto-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+}
+
 .projetos-titulo {
     text-align: center;
     font-size: 2.5rem;
